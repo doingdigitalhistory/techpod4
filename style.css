@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -26,9 +26,10 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffcc00;
 }
 main {
     max-width: 900px;
@@ -44,6 +45,25 @@ img.placeholder {
     width: 100%;
     height: auto;
     background-color: #ddd;
+    margin-top: 15px;
+}
+.source-card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #4a4a4a;
+    transition: transform 0.3s;
+}
+.source-card:hover {
+    transform: scale(1.02);
+    background-color: #e8e8e8;
+}
+.quote-carousel {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-style: italic;
 }
 footer {
     text-align: center;
