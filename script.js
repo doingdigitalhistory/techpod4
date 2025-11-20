@@ -9,8 +9,10 @@ let index = 0;
 const quoteElement = document.getElementById("quote");
 
 function showQuote() {
-    quoteElement.textContent = quotes[index];
-    index = (index + 1) % quotes.length;
+    if (quoteElement) {
+        quoteElement.textContent = quotes[index];
+        index = (index + 1) % quotes.length;
+    }
 }
 
 setInterval(showQuote, 3000);
